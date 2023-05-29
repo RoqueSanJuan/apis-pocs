@@ -17,12 +17,23 @@ fastapi
 uvicorn
 
 
-````
+```
 
 uvicorn application:app --reload  
 
 ```
 
+
+
+## Para correrlo en docker
+
+```
+
+docker build -t fastapi-items .
+
+docker run -d --name fastapi-items -p 80:80 fastapi-items
+
+```
 
 
 
